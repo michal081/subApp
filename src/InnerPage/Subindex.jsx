@@ -1,14 +1,14 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unescaped-entities */
-import  earth_dark  from "../assets/earth_dark.svg";
-import { SectionWrapper } from "../hoc";
-import { zoomIn } from "../Utils/Motion";
-import { motion } from "framer-motion";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { earth_dark } from "../assets"
+import { SectionWrapper } from "../hoc"
+import { zoomIn } from "../Utils/Motion"
+import { motion } from "framer-motion"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
-function Subscription() {
+function SubIndex() {
 
   useEffect (() => {
     AOS.init({duration: 1500});
@@ -31,4 +31,4 @@ function Subscription() {
   )
 }
 
-export default SectionWrapper(Subscription, '')
+export default SectionWrapper(SubIndex, '')
